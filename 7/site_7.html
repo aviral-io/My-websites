@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StarEvents Management</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {margin:0;font-family:"Poppins", sans-serif;background:#fdfdfd;color:#2a2a2a;}
+  header {background:#4c2a85;color:#fff;padding:35px 40px;font-size:32px;font-weight:600;}
+  nav {background:#3a1f63;padding:12px 40px;display:flex;gap:30px;}
+  nav a {color:#fff;text-decoration:none;font-size:15px;}
+  nav a:hover {text-decoration:underline;}
+  .hero {background:#efe6ff;padding:70px 40px;text-align:left;}
+  .hero h2 {font-size:36px;color:#3a1f63;margin-bottom:8px;}
+  .hero p {font-size:17px;max-width:600px;line-height:1.5;color:#4d4d4d;}
+  .section {max-width:1100px;margin:40px auto;padding:0 40px;}
+  .title {font-size:26px;color:#3a1f63;font-weight:600;margin-bottom:15px;}
+  .events {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .event-card {background:#fff;border:1px solid #e5d9ff;border-radius:8px;padding:20px;box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+  .event-card h3 {font-size:20px;color:#3a1f63;margin-bottom:6px;}
+  .event-card p {font-size:14px;line-height:1.5;margin-bottom:10px;}
+  .event-card button {padding:10px 15px;background:#3a1f63;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:14px;}
+  .event-card button:hover {opacity:0.9;}
+  .book-box {background:#fff;border-radius:8px;border:1px solid #e0e0e0;padding:25px;box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+  form {display:flex;flex-direction:column;gap:10px;margin-top:10px;}
+  input, select {padding:10px;border-radius:4px;border:1px solid #ccc;font-size:14px;}
+  button {padding:10px 15px;background:#4c2a85;color:#fff;border:none;border-radius:4px;font-size:14px;cursor:pointer;}
+  button:hover {opacity:0.9;}
+  .testimonials {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+  .testi-card {background:#f8f2ff;border-radius:8px;padding:20px;line-height:1.6;border-left:5px solid #4c2a85;}
+  .testi-card strong {font-size:16px;color:#3a1f63;}
+  footer {margin-top:40px;text-align:center;background:#3a1f63;color:#fff;padding:15px;font-size:14px;}
+</style>
+</head>
+<body>
+
+<header>StarEvents Management</header>
+
+<nav>
+  <a href="#events">Events</a>
+  <a href="#booking">Booking</a>
+  <a href="#testimonials">Testimonials</a>
+</nav>
+
+<div class="hero">
+  <h2>We Turn Your Moments Into Memories</h2>
+  <p>StarEvents specializes in corporate meets, weddings, concerts, and private celebrations with flawless planning and creative execution.</p>
+</div>
+
+<section id="events" class="section">
+  <div class="title">Upcoming Events</div>
+  <div class="events">
+    <div class="event-card">
+      <h3>Grand Wedding Expo</h3>
+      <p>A showcase of top decorators, caterers, designers, and wedding planners.</p>
+      <button>View Details</button>
+    </div>
+    <div class="event-card">
+      <h3>Corporate Summit 2025</h3>
+      <p>An exclusive business networking event with keynote speakers.</p>
+      <button>View Details</button>
+    </div>
+    <div class="event-card">
+      <h3>Summer Music Fest</h3>
+      <p>Live bands, DJs, and food stalls for a vibrant summer night.</p>
+      <button>View Details</button>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="section">
+  <div class="title">Book Your Event</div>
+  <div class="book-box">
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="text" placeholder="Phone Number">
+      <select>
+        <option>Select Event Type</option>
+        <option>Wedding</option>
+        <option>Corporate Event</option>
+        <option>Birthday Party</option>
+        <option>Concert</option>
+      </select>
+      <input type="date">
+      <button>Submit Booking</button>
+    </form>
+  </div>
+</section>
+
+<section id="testimonials" class="section">
+  <div class="title">Client Testimonials</div>
+  <div class="testimonials">
+    <div class="testi-card">
+      <strong>Priya Sharma</strong>
+      <p>The wedding planning was outstanding. Everything looked dreamy and elegant.</p>
+    </div>
+    <div class="testi-card">
+      <strong>Rahul Verma</strong>
+      <p>Our corporate event was perfectly organized. Smooth, timely, and impressive.</p>
+    </div>
+    <div class="testi-card">
+      <strong>Madeeha Khan</strong>
+      <p>The music festival they organized was unforgettable. Amazing work!</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 StarEvents Management</footer>
+
+</body>
+</html>

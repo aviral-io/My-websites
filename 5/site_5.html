@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TechLens Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {margin:0;font-family:Georgia, "Times New Roman", serif;background:#f5efe6;color:#2a2623;}
+  header {padding:25px 40px;background:#2a2623;color:#f5efe6;display:flex;justify-content:space-between;align-items:center;}
+  header h1 {font-size:30px;letter-spacing:1px;}
+  header span {font-size:13px;text-transform:uppercase;}
+  .wrapper {display:flex;flex-wrap:wrap;max-width:1100px;margin:30px auto;padding:0 20px;gap:25px;}
+  main {flex:2;min-width:260px;}
+  aside {flex:1;min-width:220px;}
+  .post {background:#fff;border-radius:6px;padding:20px;margin-bottom:20px;border:1px solid #e0d5c5;}
+  .post h2 {font-size:24px;margin-bottom:5px;}
+  .meta {font-size:12px;text-transform:uppercase;color:#8b7c6d;margin-bottom:10px;}
+  .post p {font-size:15px;line-height:1.6;margin-bottom:10px;}
+  .tag-list {font-size:12px;margin-top:5px;}
+  .tag {display:inline-block;padding:2px 7px;border-radius:3px;background:#f0dac0;margin-right:5px;margin-top:3px;}
+  .sidebar-box {background:#fff;border-radius:6px;padding:15px;margin-bottom:20px;border:1px solid #e0d5c5;}
+  .sidebar-box h3 {font-size:18px;margin-bottom:8px;}
+  .sidebar-list li {list-style:none;padding:4px 0;font-size:14px;border-bottom:1px solid #eee;}
+  .sidebar-list li:last-child {border-bottom:none;}
+  .sidebar-list span {font-size:12px;color:#8b7c6d;}
+  .comment-section {background:#fff;border-radius:6px;padding:20px;border:1px solid #e0d5c5;margin-top:15px;}
+  .comment-section h3 {font-size:18px;margin-bottom:10px;}
+  .existing-comment {margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #eee;font-size:14px;}
+  .existing-comment strong {display:block;margin-bottom:3px;}
+  form {display:flex;flex-direction:column;gap:8px;margin-top:10px;}
+  input, textarea {font-family:inherit;font-size:14px;padding:8px;border-radius:4px;border:1px solid #c9b8a4;background:#fdf9f3;}
+  textarea {resize:vertical;min-height:70px;}
+  button {align-self:flex-start;margin-top:5px;padding:8px 14px;border:none;border-radius:4px;background:#c96b2c;color:#fff;font-size:14px;cursor:pointer;}
+  button:hover {opacity:0.9;}
+  footer {text-align:center;font-size:13px;color:#8b7c6d;padding:20px 0;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>TechLens</h1>
+    <span>Insights on Modern Technology</span>
+  </div>
+  <div>
+    <span>Categories: AI · Web · Mobile</span>
+  </div>
+</header>
+
+<div class="wrapper">
+  <main>
+    <article class="post">
+      <h2>Getting Started with Artificial Intelligence</h2>
+      <div class="meta">Category: AI • Posted on 10 March 2025 • 5 min read</div>
+      <p>Artificial Intelligence is no longer a distant concept. From recommendation systems to voice assistants, AI has quietly become part of our everyday lives.</p>
+      <p>This article introduces the basic ideas behind AI, including machine learning, data, and simple projects you can experiment with as a beginner.</p>
+      <div class="tag-list">
+        <span class="tag">AI Basics</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Beginners</span>
+      </div>
+
+      <div class="comment-section">
+        <h3>Comments</h3>
+        <div class="existing-comment">
+          <strong>Rohan</strong>
+          <span>Very clear introduction. Looking forward to more AI articles!</span>
+        </div>
+        <div class="existing-comment">
+          <strong>Ananya</strong>
+          <span>The examples made it easy to understand. Thanks!</span>
+        </div>
+        <form>
+          <input type="text" placeholder="Your Name">
+          <textarea placeholder="Write your comment here"></textarea>
+          <button>Post Comment</button>
+        </form>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2>Is Web Development Still Worth Learning?</h2>
+      <div class="meta">Category: Web Development • Posted on 02 March 2025 • 4 min read</div>
+      <p>With so many tools and frameworks available, web development continues to be one of the most flexible and in-demand skills in tech.</p>
+      <p>In this post, we discuss why HTML, CSS, and JavaScript still form the foundation of the web and how beginners can start their journey.</p>
+      <div class="tag-list">
+        <span class="tag">Web</span>
+        <span class="tag">Frontend</span>
+        <span class="tag">Career</span>
+      </div>
+    </article>
+  </main>
+
+  <aside>
+    <div class="sidebar-box">
+      <h3>Categories</h3>
+      <ul class="sidebar-list">
+        <li>Artificial Intelligence <span>(4)</span></li>
+        <li>Web Development <span>(6)</span></li>
+        <li>Mobile Apps <span>(3)</span></li>
+        <li>Cybersecurity <span>(2)</span></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>Popular Tags</h3>
+      <div class="tag-list">
+        <span class="tag">AI</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Android</span>
+        <span class="tag">Security</span>
+        <span class="tag">Python</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer>© 2025 TechLens Educational Blog</footer>
+
+</body>
+</html>
